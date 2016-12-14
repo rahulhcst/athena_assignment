@@ -1,0 +1,9 @@
+header .navbar, .navbar-brand{
+    min-height: 70px;
+}
+
+#athena-logo > img{
+    height: 38px;
+    width: 272px;
+}
+
