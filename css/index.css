@@ -7,3 +7,282 @@ header .navbar, .navbar-brand{
     width: 272px;
 }
 
+#super-athena{
+    height: 171px;
+    width: 121px;
+    margin: 0 auto;
+}
+
+#hover-menu > .navbar-nav {
+    margin-top: 10px;
+}
+
+#hover-menu > ul > li:last-child {
+    border-right-width: 1px;
+    border-right-style: solid;
+    -webkit-border-image: -webkit-gradient(linear, 0 100%, 0 0, from(#dbdcde), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(bottom, #dbdcde, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image: -moz-linear-gradient(bottom, #dbdcde, rgba(0, 0, 0, 0)) 1 100%;
+    -o-border-image: -o-linear-gradient(bottom, #dbdcde, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to top, #dbdcde, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+#hover-menu > ul > li {
+    border-left-width: 1px;
+    border-left-style: solid;
+    -webkit-border-image: -webkit-gradient(linear, 0 100%, 0 0, from(#dbdcde), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(bottom, #dbdcde, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image: -moz-linear-gradient(bottom, #dbdcde, rgba(0, 0, 0, 0)) 1 100%;
+    -o-border-image: -o-linear-gradient(bottom, #dbdcde, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to top, #dbdcde, rgba(0, 0, 0, 0)) 1 100%;
+    list-style: none;
+    /*float: left;*/
+    color: #592C81;
+    font-size: 20px;
+}
+
+/*#hover-menu > ul > li.active,#hover-menu > ul > li.open{
+    background-color: #dbdcde;
+    border-radius: 10px 10px 0 0;
+}*/
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: #dbdcde !important;
+    border-radius: 10px 10px 0 0;
+}
+
+#hover-menu > ul > li.active a {
+    background-color: transparent;
+}
+
+#hover-menu > ul > li > a {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#hover-menu li a > span {
+    display: block;
+    line-height: 20px;
+    text-align: center;
+}
+
+.navbar-default {
+    background-color: #fff;
+    box-shadow: 0 8px 8px -8px #5B5B5B;
+    z-index: 20001;
+}
+
+.navbar-toggle {
+    margin-top: 19px
+}
+
+
+/*
+style="display: inline"*/
+
+.dropdown-menu {
+    position: fixed;
+    top: 70px;
+    left: calc(50% - 570px) !important;
+    right: auto !important;
+    border-radius: 0 0 10px 10px;
+    background-color: #dbdcde;
+    padding: 0;
+    border-top: 0;
+}
+
+.left-content {
+    background-color: #592c81;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px;
+}
+
+.right-content{
+    margin-top: 30px;
+}
+
+#revenue-btn{
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.right-content li {
+    list-style-type: none;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.right-content ul li a {
+    color: #799A3D;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.right-content ul li span {
+    float: right;
+    top: 5px;
+    font-size: 20px;
+    color: #799A3D;
+}
+
+.right-content ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #799A3D;
+}
+
+.right-content ul li:last-child {
+    border-bottom: none;
+}
+
+.right-content a, .right-content a:hover, .right-content a:visited {
+    text-decoration: none;
+    color: #799A3D;
+}
+
+main{
+    margin-top: 70px;
+}
+
+/*************Media classes starts*******************/
+@media (max-width: 500px) {
+    .footer-left div {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-left, .footer-right {
+        text-align: center;
+    }
+
+    #hover-menu > ul > li > a {
+        border-bottom: 1px solid #ddd;
+        color: #592C81;
+        font-size: 20px;
+    }
+
+    .left-content {
+        display: none;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+
+/*    .overlay > div > h1 {
+        font-size: 25px;
+        margin: 20px 30px 20px 30px;
+    }
+
+    .overlay > div > h3 {
+        font-size: 13px;
+        margin: 0 30px 15px;
+    }
+
+    .athenistas-heading {
+        text-align: center;
+        font-size: 35px;
+    }*/
+}
+
+@media (max-width: 767px) {
+    #main-menu li a > span {
+        display: inline;
+    }
+}
+
+@media (max-width: 990px) {
+    #main-menu ul li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1157px) {
+    .right-content ul li a {
+        font-size: 12px;
+    }
+
+    .right-content ul {
+        padding-left: 0;
+    }
+
+    /*.revenue {
+        height: auto;
+        font-size: 15px;
+    }*/
+
+    .dropdown-menu {
+        left: calc(50% - 338px) !important;
+    }
+
+    .left-content {
+        padding: 0 0 5px 0;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1285px) {
+    #athenistas-container {
+        max-width: 951px;
+    }
+
+}
+
+@media (max-width: 970px) {
+    #athenistas-container {
+        max-width: 634px;
+    }
+
+}
+
+@media (max-width: 651px) {
+    #athenistas-container {
+        max-width: 317px;
+    }
+}
+
+/*************Media classes ends*******************/
+
+.complete-width {
+    width: 100%;
+}
+
+#banner {
+    position: relative;
+}
+#banner > div {
+    position: absolute;
+    background-color: rgba(89, 44, 129, 0.7);
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+#banner div.container > h1 {
+    font-size: 50px;
+    margin: 40px 50px 20px 0;
+}
+
+#banner div.container > h3 {
+    font-size: 17px;
+    margin: 0 0 30px 0;
+}
+
+
+
+#career-athena{
+    max-height: 500px;
+}
+
+/**general start**/
+.mtop-30{
+    margin-top: 30px;
+}
+
+.font18{
+    font-size: 18px;
+}
+
+/**general end**/
